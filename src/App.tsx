@@ -1,4 +1,4 @@
-import Test from './pages/Test/Components/Calculator';
+import Test from "./pages/Trade";
 
 const App = () => {
   return <Test />;
