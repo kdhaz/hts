@@ -19,7 +19,7 @@ const Test = () => {
               item
               xs={12}
               lg={6}
-              style={{ color: "white", backgroundColor: "black" }}
+              style={{ color: "white", backgroundColor: "#616A6B" }}
             >
               호가
             </Grid>
