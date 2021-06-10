@@ -1,23 +1,38 @@
 import { Container, Grid } from "@material-ui/core";
-
+import Divider from "@material-ui/core/Divider";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
 const CurrentPrice = () => {
   return (
-    <Container style={{ backgroundColor: "gray" }}>
+    <Box>
       <Grid container>
-        <Grid item xs={12} lg={12} style={{ backgroundColor: "white" }}>
-          sk텔레콤
+        <Grid item xs={12} lg={12}>
+          <Typography variant="h4">SK텔레콤</Typography>
         </Grid>
-        <Grid item xs={12} lg={6} style={{ backgroundColor: "white" }}>
-          150000원
+        <Grid item xs={12} lg={6}>
+          <Box>
+            <Typography variant="h1"></Typography>
+          </Box>
+          <Box>전일대비</Box>
         </Grid>
-        <Grid item xs={12} lg={3} style={{ backgroundColor: "white" }}>
-          고가 172000
-        </Grid>
-        <Grid item xs={12} lg={3} style={{ backgroundColor: "white" }}>
-          거래량(24H)
+        <Grid item xs={12} lg={6}>
+          <Grid container>
+            <Grid item xs={6}>
+              <Box></Box>
+              <Grid item xs={12} lg={6}>
+                현재가
+              </Grid>
+              <Divider />
+              <Grid item xs={12} lg={6}>
+                전일가
+              </Grid>
+              <Box></Box>
+            </Grid>
+            <Grid item xs={6}></Grid>
+          </Grid>
         </Grid>
       </Grid>
-    </Container>
+    </Box>
   );
 };
 
